@@ -235,53 +235,73 @@
                         <h4 class="text-sm font-extrabold text-white mb-1 tracking-wide">Pemetaan & Alur Evolusi Dokumen BCP</h4>
                         <p class="text-xs text-slate-400 font-light">Visualisasi fungsional klasifikasi dokumen penanganan krisis dan ketahanan korporat.</p>
                     </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-5 items-center gap-4">
-                        <div class="space-y-4 lg:col-span-1">
-                            <div class="bg-rose-950/20 p-4 rounded-xl border border-rose-900/40 relative overflow-hidden transition-all duration-300 hover:border-rose-500/50 hover:bg-rose-950/30 hover:shadow-md">
-                                <span class="text-[10px] font-extrabold text-rose-400 uppercase tracking-wider block mb-1">BRP Versi GSS Department</span>
-                                <h5 class="text-xs font-bold text-slate-200 leading-snug">Business Resumption Plan</h5>
-                                <p class="text-[11px] text-slate-400 font-light mt-2">No. Dok.: EMP-GSS-PCM-00.001</p>
-                                <p class="text-[10px] text-slate-500 font-medium mt-0.5">15 Juni 2012</p>
+                    <div class="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4">
+                        <!-- KOLOM 1: BRP -->
+                        <div class="space-y-4 lg:col-span-1 flex flex-col justify-between">
+                            <div class="bg-rose-950/20 p-4 rounded-xl border border-rose-900/40 relative overflow-hidden transition-all duration-300 hover:border-rose-500/50 hover:bg-rose-950/30 hover:shadow-md flex flex-col justify-between h-full">
+                                <div class="relative z-10">
+                                    <span class="text-[10px] font-extrabold text-rose-400 uppercase tracking-wider block mb-1">BRP Versi GSS Department</span>
+                                    <h5 class="text-xs font-bold text-slate-200 leading-snug">Business Resumption Plan</h5>
+                                    <p class="text-[11px] text-slate-400 font-light mt-2">No. Dok.: EMP-GSS-PCM-00.001</p>
+                                    <p class="text-[10px] text-slate-500 font-medium mt-0.5">15 Juni 2012</p>
+                                </div>
+                                <button onclick="openPdfModal('./BRP%20Versi%20GSS.pdf', 'BRP Versi GSS (2012)')" class="mt-4 w-full bg-rose-900/40 hover:bg-rose-600 text-rose-300 hover:text-white text-[10px] font-bold py-1.5 px-3 rounded-lg border border-rose-700/50 hover:border-rose-500 transition-all flex items-center justify-center gap-1.5 shadow-sm relative z-10">
+                                    <i data-lucide="eye" class="w-3.5 h-3.5"></i> Lihat Dokumen
+                                </button>
                             </div>
-                            <div class="bg-rose-950/20 p-4 rounded-xl border border-rose-900/40 relative overflow-hidden transition-all duration-300 hover:border-rose-500/50 hover:bg-rose-950/30 hover:shadow-md">
-                                <span class="text-[10px] font-extrabold text-rose-400 uppercase tracking-wider block mb-1">BRP Versi Industrial Relations</span>
-                                <h5 class="text-xs font-bold text-slate-200 leading-snug">Business Resumption Plan</h5>
-                                <p class="text-[11px] text-slate-400 font-light mt-2">No. Dok.: EMP-IRS-PCR-00.001</p>
-                                <p class="text-[10px] text-slate-500 font-medium mt-0.5">1 November 2020</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex flex-col items-center justify-center lg:col-span-1 h-full py-2 w-full">
-                            <div class="w-full flex items-center justify-center h-full relative">
-                                <div class="hidden lg:block w-[1.5px] h-32 bg-slate-800 laser-divider-v relative overflow-hidden rounded-full"></div>
-                                <div class="lg:hidden h-[1.5px] w-full bg-slate-800 laser-divider-h relative overflow-hidden rounded-full my-2"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-emerald-950/20 p-4 rounded-xl border border-emerald-900/40 relative overflow-hidden lg:col-span-1 transition-all duration-300 hover:border-emerald-500/50 hover:bg-emerald-950/30 hover:shadow-md">
-                            <div class="absolute right-0 bottom-0 opacity-5 translate-x-2 translate-y-2">
-                                <i data-lucide="shield-check" class="w-16 h-16 text-emerald-400"></i>
-                            </div>
-                            <span class="text-[10px] font-extrabold text-emerald-400 uppercase tracking-wider block mb-1">Versi SHE</span>
-                            <h5 class="text-xs font-bold text-slate-200 leading-snug">Manajemen Keadaan Darurat dan Krisis</h5>
-                            <p class="text-[11px] text-slate-400 font-light mt-3">No. Dok.: EMP-SHE-SOP-00.002-01</p>
-                            <p class="text-[10px] text-slate-500 font-medium mt-0.5">31 Oktober 2024</p>
-                        </div>
-                        
-                        <div class="flex flex-col items-center justify-center lg:col-span-1 h-full py-2 w-full">
-                            <div class="w-full flex items-center justify-center h-full relative">
-                                <div class="hidden lg:block w-[1.5px] h-32 bg-slate-800 laser-divider-v relative overflow-hidden rounded-full"></div>
-                                <div class="lg:hidden h-[1.5px] w-full bg-slate-800 laser-divider-h relative overflow-hidden rounded-full my-2"></div>
+                            <div class="bg-rose-950/20 p-4 rounded-xl border border-rose-900/40 relative overflow-hidden transition-all duration-300 hover:border-rose-500/50 hover:bg-rose-950/30 hover:shadow-md flex flex-col justify-between h-full">
+                                <div class="relative z-10">
+                                    <span class="text-[10px] font-extrabold text-rose-400 uppercase tracking-wider block mb-1">BRP Versi Industrial Relations</span>
+                                    <h5 class="text-xs font-bold text-slate-200 leading-snug">Business Resumption Plan</h5>
+                                    <p class="text-[11px] text-slate-400 font-light mt-2">No. Dok.: EMP-IRS-PCR-00.001</p>
+                                    <p class="text-[10px] text-slate-500 font-medium mt-0.5">1 November 2020</p>
+                                </div>
+                                <button onclick="openPdfModal('./BRP%20Versi%20Industrial%20Relation.pdf', 'BRP Industrial Relation (2020)')" class="mt-4 w-full bg-rose-900/40 hover:bg-rose-600 text-rose-300 hover:text-white text-[10px] font-bold py-1.5 px-3 rounded-lg border border-rose-700/50 hover:border-rose-500 transition-all flex items-center justify-center gap-1.5 shadow-sm relative z-10">
+                                    <i data-lucide="eye" class="w-3.5 h-3.5"></i> Lihat Dokumen
+                                </button>
                             </div>
                         </div>
                         
-                        <div class="bg-gradient-to-br from-slate-950 via-slate-900 to-amber-950/40 p-5 rounded-xl text-white shadow-md relative overflow-hidden border border-amber-800/40 lg:col-span-1 transition-all duration-300 hover:border-amber-500 hover:shadow-xl">
-                            <div class="absolute right-0 bottom-0 opacity-15 translate-x-2 translate-y-2">
-                                <i data-lucide="award" class="w-16 h-16 text-amber-400"></i>
+                        <!-- KOLOM 2: GARIS PEMISAH -->
+                        <div class="flex flex-col items-center justify-center lg:col-span-1 w-full">
+                            <div class="hidden lg:block w-[1.5px] h-full bg-slate-800 laser-divider-v relative overflow-hidden rounded-full"></div>
+                            <div class="lg:hidden h-[1.5px] w-full bg-slate-800 laser-divider-h relative overflow-hidden rounded-full my-2"></div>
+                        </div>
+                        
+                        <!-- KOLOM 3: ERP (Di Tengah) -->
+                        <div class="flex flex-col justify-center lg:col-span-1 h-full">
+                            <div class="bg-emerald-950/20 p-4 rounded-xl border border-emerald-900/40 relative overflow-hidden transition-all duration-300 hover:border-emerald-500/50 hover:bg-emerald-950/30 hover:shadow-md flex flex-col justify-between">
+                                <div class="absolute right-0 bottom-0 opacity-5 translate-x-2 translate-y-2 pointer-events-none">
+                                    <i data-lucide="shield-check" class="w-16 h-16 text-emerald-400"></i>
+                                </div>
+                                <div class="relative z-10">
+                                    <span class="text-[10px] font-extrabold text-emerald-400 uppercase tracking-wider block mb-1">Versi SHE</span>
+                                    <h5 class="text-xs font-bold text-slate-200 leading-snug">Manajemen Keadaan Darurat dan Krisis</h5>
+                                    <p class="text-[11px] text-slate-400 font-light mt-3">No. Dok.: EMP-SHE-SOP-00.002-01</p>
+                                    <p class="text-[10px] text-slate-500 font-medium mt-0.5">31 Oktober 2024</p>
+                                </div>
+                                <button onclick="openPdfModal('./ERP.pdf', 'Dokumen ERP / Manajemen Krisis')" class="mt-4 w-full relative z-10 bg-emerald-900/40 hover:bg-emerald-600 text-emerald-300 hover:text-white text-[10px] font-bold py-1.5 px-3 rounded-lg border border-emerald-700/50 hover:border-emerald-500 transition-all flex items-center justify-center gap-1.5 shadow-sm">
+                                    <i data-lucide="eye" class="w-3.5 h-3.5"></i> Lihat Dokumen
+                                </button>
                             </div>
-                            <span class="bg-amber-500/20 text-amber-300 text-[9px] px-2 py-0.5 rounded font-bold uppercase tracking-widest block w-fit mb-2 border border-amber-500/20">Corporate Standard</span>
-                            <h4 class="text-sm font-black tracking-wider uppercase bg-gradient-to-r from-white via-amber-200 to-yellow-400 bg-clip-text text-transparent">PLAN (BCP)</h4>
-                            <p class="text-[11px] text-slate-300 font-light mt-2 leading-relaxed">Business Continuity Plan Terintegrasi Tingkat Korporat.</p>
+                        </div>
+                        
+                        <!-- KOLOM 4: GARIS PEMISAH -->
+                        <div class="flex flex-col items-center justify-center lg:col-span-1 w-full">
+                            <div class="hidden lg:block w-[1.5px] h-full bg-slate-800 laser-divider-v relative overflow-hidden rounded-full"></div>
+                            <div class="lg:hidden h-[1.5px] w-full bg-slate-800 laser-divider-h relative overflow-hidden rounded-full my-2"></div>
+                        </div>
+                        
+                        <!-- KOLOM 5: BCP (Di Tengah) -->
+                        <div class="flex flex-col justify-center lg:col-span-1 h-full">
+                            <div class="bg-gradient-to-br from-slate-950 via-slate-900 to-amber-950/40 p-5 rounded-xl text-white shadow-md relative overflow-hidden border border-amber-800/40 transition-all duration-300 hover:border-amber-500 hover:shadow-xl">
+                                <div class="absolute right-0 bottom-0 opacity-15 translate-x-2 translate-y-2 pointer-events-none">
+                                    <i data-lucide="award" class="w-16 h-16 text-amber-400"></i>
+                                </div>
+                                <span class="bg-amber-500/20 text-amber-300 text-[9px] px-2 py-0.5 rounded font-bold uppercase tracking-widest block w-fit mb-2 border border-amber-500/20 relative z-10">Corporate Standard</span>
+                                <h4 class="text-sm font-black tracking-wider uppercase bg-gradient-to-r from-white via-amber-200 to-yellow-400 bg-clip-text text-transparent relative z-10">PLAN (BCP)</h4>
+                                <p class="text-[11px] text-slate-300 font-light mt-2 leading-relaxed relative z-10">Business Continuity Plan Terintegrasi Tingkat Korporat.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -743,6 +763,29 @@
         <div>
             <p class="text-xs font-bold text-white" id="toast-title">Notifikasi Sistem</p>
             <p class="text-[11px] text-slate-400" id="toast-message">Pesan notifikasi...</p>
+        </div>
+    </div>
+
+    <div id="pdf-modal" class="fixed inset-0 z-[60] bg-slate-950/90 backdrop-blur-sm hidden flex-col items-center justify-center p-4 transition-opacity duration-300 opacity-0">
+        <div class="bg-slate-900 w-full max-w-[95vw] h-[95vh] rounded-2xl border border-slate-700 shadow-2xl flex flex-col overflow-hidden transform scale-95 transition-transform duration-300 mx-auto" id="pdf-modal-content">
+            <div class="flex items-center justify-between p-4 border-b border-slate-800 bg-slate-950">
+                <div class="flex items-center gap-3">
+                    <div class="bg-indigo-500/20 p-2 rounded-lg border border-indigo-500/30">
+                        <i data-lucide="file-text" class="w-4 h-4 text-indigo-400"></i>
+                    </div>
+                    <h3 id="pdf-modal-title" class="text-sm font-bold text-white uppercase tracking-wider">Preview Dokumen</h3>
+                </div>
+                <button onclick="closePdfModal()" class="p-2 bg-slate-800 hover:bg-rose-600 text-slate-400 hover:text-white rounded-lg transition-colors border border-slate-700 hover:border-rose-500">
+                    <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+            </div>
+            <div class="flex-1 bg-slate-950/50 p-2 relative">
+                <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 z-0 pointer-events-none">
+                    <i data-lucide="loader-2" class="w-8 h-8 text-indigo-500 animate-spin"></i>
+                    <span class="text-xs text-slate-400 font-medium animate-pulse">Memuat dokumen...</span>
+                </div>
+                <iframe id="pdf-iframe" class="w-full h-full rounded-xl border border-slate-800 relative z-10 bg-white" src="" frameborder="0"></iframe>
+            </div>
         </div>
     </div>
 
@@ -2046,6 +2089,48 @@
             window.toggleAutoplay = toggleAutoplay;
             window.toggleFullScreen = toggleFullScreen;
             window.toggleSidebar = toggleSidebar;
+
+            // --- FUNGSI MODAL PDF ---
+            function openPdfModal(pdfUrl, title) {
+                const modal = document.getElementById('pdf-modal');
+                const modalContent = document.getElementById('pdf-modal-content');
+                const iframe = document.getElementById('pdf-iframe');
+                const titleEl = document.getElementById('pdf-modal-title');
+                
+                titleEl.innerText = title;
+                
+                // Modifikasi URL dengan Parameter Bawaan Browser untuk Mode Presentasi Bersih:
+                // #toolbar=0 (hilangkan menubar atas)
+                // &navpanes=0 (hilangkan sidebar kiri bawaan PDF)
+                // &view=Fit (paksa PDF fit satu halaman penuh dan berada tepat di tengah)
+                iframe.src = pdfUrl + "#toolbar=0&navpanes=0&view=Fit"; 
+                
+                modal.classList.remove('hidden');
+                void modal.offsetWidth; // Trigger reflow untuk animasi smooth
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+                
+                lucide.createIcons();
+            }
+
+            function closePdfModal() {
+                const modal = document.getElementById('pdf-modal');
+                const modalContent = document.getElementById('pdf-modal-content');
+                const iframe = document.getElementById('pdf-iframe');
+                
+                modal.classList.add('opacity-0');
+                modalContent.classList.remove('scale-100');
+                modalContent.classList.add('scale-95');
+                
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                    iframe.src = ''; // Bersihkan memori saat ditutup
+                }, 300);
+            }
+
+            window.openPdfModal = openPdfModal;
+            window.closePdfModal = closePdfModal;
 
             function startLiveClock() {
                 const updateClock = () => {
